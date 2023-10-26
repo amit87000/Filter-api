@@ -6,6 +6,7 @@ function data() {
             console.log(data);
             const showData = document.getElementById('tabledata');
             const dataHTML = data.map(person => `<tr>
+            <td>${person.id}</td>
         <td>${person.first_name}</td>
         <td>${person.last_name}</td>
         <td>${person.gender}</td>
@@ -26,6 +27,7 @@ function maledata() {
             const maleData = data.filter(person => person.gender.toLowerCase() === "male");
             const showData = document.getElementById('tabledata');
             const maleDataHTML = maleData.map(person => `<tr>
+            <td>${person.id}</td>
         <td>${person.first_name}</td>
         <td>${person.last_name}</td>
         <td>${person.gender}</td>
@@ -45,6 +47,7 @@ function femaledata() {
             const maleData = data.filter(person => person.gender.toLowerCase() === "female");
             const showData = document.getElementById('tabledata');
             const maleDataHTML = maleData.map(person => ` <tr>
+            <td>${person.id}</td>
             <td>${person.first_name}</td>
             <td>${person.last_name_name}</td>
             <td>${person.gender}</td> 
