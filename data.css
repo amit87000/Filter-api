@@ -1,0 +1,17 @@
+.tableview {
+    width: 100%; 
+    border-collapse: collapse; 
+    border: 1px solid #ccc; 
+}
+
+.tableview th, .tableview td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc; 
+}
+
+.tableview th {
+    background-color: #f0f0f0; 
+    font-weight: bold; 
+}
+
